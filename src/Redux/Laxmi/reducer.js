@@ -6,9 +6,9 @@ import {INC_COUNT} from './action';
 
 
 
-export const reducer = (store={count : 0},{type,payload})=>{
+export const reducerCount = (store={count : 0},{type,payload})=>{
+    console.log(store);
     switch (type){
-     
         case INC_COUNT:
             return{
                 ...store,
